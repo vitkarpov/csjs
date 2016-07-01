@@ -1,0 +1,18 @@
+{
+  "name": "csjs",
+  "version": "0.0.1",
+  "description": "A bunch of Computer Science Data Structures implemented in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "computer",
+    "science",
+    "data",
+    "structures",
+    "javascript"
+  ],
+  "author": "Vit Karpov <viktor.s.karpov@gmail.com>",
+  "license": "MIT"
+}
