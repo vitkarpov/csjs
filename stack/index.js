@@ -24,4 +24,8 @@ class Stack {
   clear() {
     this._top = 0;
   }
+
+  toString() {
+    return this._store.join();
+  }
 }
