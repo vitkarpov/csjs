@@ -6,6 +6,7 @@ class Stack {
 
   push(item) {
     this._store[this._top++] = item;
+    return this;
   }
 
   pop() {
