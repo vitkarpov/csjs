@@ -29,3 +29,5 @@ class Stack {
     return this._store.join();
   }
 }
+
+module.exports = Stack;

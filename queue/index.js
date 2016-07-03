@@ -28,3 +28,5 @@ class Queue {
     return this._stack.join();
   }
 }
+
+module.exports = Queue;
