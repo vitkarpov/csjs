@@ -1,5 +1,5 @@
 {
-  "name": "csjs",
+  "name": "cs-js",
   "version": "0.0.1",
   "description": "A bunch of Computer Science Data Structures implemented in JavaScript",
   "main": "index.js",
