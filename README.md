@@ -3,7 +3,6 @@
 WIP
 
 - [x] Stack
-- [ ] List
 - [x] Queues
   - [x] Priority Queues
   - [ ] Dequeue
