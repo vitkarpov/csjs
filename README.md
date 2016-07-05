@@ -4,7 +4,7 @@ WIP
 
 - [x] Stack
 - [ ] List
-- [ ] Queues
+- [x] Queues
 - [ ] Linked Lists
 - [ ] Dictionaries
 - [ ] Hashing
