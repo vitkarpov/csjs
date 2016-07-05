@@ -1,15 +1,29 @@
 class Queue {
   constructor() {
-    this._store = [];
+    this._store = {};
   }
 
-  enqueue(item) {
-    this._store.push(item);
+  enqueue(item, priority = 0) {
+    if (!this._store[priority]) {
+        this._store[priority] = [];
+    }
+    this._store[priority].push(item);
+
     return this;
   }
 
   dequeue() {
-    return this._store.shift();
+    const priorities = Object.keys(this._store).sort((a, b) => {
+        return a >= b;
+    });
+    let highest = priorities.pop();
+
+    while (highest) {
+        if (this._store[highest].length) {
+            return this._store[highest].shift();
+        }
+        highest = priorities.pop();
+    }
   }
 
   front() {
