@@ -7,9 +7,9 @@ WIP
 - [x] Queues
   - [x] Priority Queues
   - [ ] Dequeue
-- [ ] Linked Lists
+- [x] Linked Lists
 - [ ] Dictionaries
-- [ ] Hashing
+- [x] Hashing
 - [ ] Sets
 - [ ] Binary Trees
 - [ ] Binary Search Trees
