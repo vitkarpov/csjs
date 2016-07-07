@@ -48,6 +48,24 @@ class BST {
     return this;
   }
 
+  find(value) {
+    let current = this._root;
+    let delta = current - value;
+
+    while (delta !== 0) {
+        if (delta < 0) {
+            current = current.right;
+        } else {
+            current = current.left;
+        }
+        if (current === null) {
+            return null;
+        }
+        delta = current - value;
+    }
+    return current;
+  }
+
   getMin() {
     let current = this._root;
 
