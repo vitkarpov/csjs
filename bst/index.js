@@ -48,6 +48,24 @@ class BST {
     return this;
   }
 
+  getMin() {
+    let current = this._root;
+
+    while (current.left !== null) {
+      current = current.left;
+    }
+    return Number(current);
+  }
+
+  getMax() {
+    let current = this._root;
+
+    while (current.right !== null) {
+      current = current.right;
+    }
+    return Number(current);
+  }
+
   _collectItemsInOrder(node, store) {
     if (node === null) {
       return store;
