@@ -10,6 +10,5 @@ WIP
 - [ ] Dictionaries
 - [x] Hashing
 - [ ] Sets
-- [ ] Binary Trees
-- [ ] Binary Search Trees
+- [x] Binary Search Trees
 - [ ] Graphs
