@@ -1,41 +1,33 @@
 class Queue {
-  constructor() {
+  constructor(comparator) {
     this._store = [];
+    this._cmp = comparator || defaultComparator;
   }
 
-  enqueue(item, priority = 0) {
-    this._store.push({ item, priority });
-
-    return this;
+  enqueue(item) {
+    this._store.push(item);
+    this._store.sort(this._cmp);
   }
 
   dequeue() {
-    const highest = this._store.reduce((memo, item, index) => {
-        if (item.priority < memo.priority) {
-            memo.priority = item.priority;
-            memo.index = index;
-        }
-        return memo;
-    }, { priority: 99, index: -1 });
-
-    return (this._store.splice(highest.index, 1)[0] || {}).item;
+    return this._store.pop();
   }
 
   front() {
-    return this._store[0].item;
+    return this._store[this._store.length - 1];
   }
 
   back() {
-    return this._store[this._store.length - 1].item;
+    return this._store[0];
   }
 
   empty() {
     return this._store.length === 0;
   }
+}
 
-  toString() {
-    return this._stack.join();
-  }
+function defaultComparator(a, b) {
+  return a > b;
 }
 
 module.exports = Queue;
