@@ -12,13 +12,11 @@ Server is running: http://localhost:3000/?profile=queue
 $ ab -k -c 20 -n 250 "http://localhost:3000/?profile=queue"
 
 …
-Requests per second:    1.27 [#/sec] (mean)
-Time per request:       15770.337 [ms] (mean)
-Time per request:       788.517 [ms] (mean, across all concurrent requests)
+Requests per second:    106.29 [#/sec] (mean)
+Time per request:       188.171 [ms] (mean)
+Time per request:       9.409 [ms] (mean, across all concurrent requests)
 …
 ```
-
-For instance, priority queue is now implemented with inefficient way, chech out [profiling results](queue/profiling-results)
 
 ## WIP
 
