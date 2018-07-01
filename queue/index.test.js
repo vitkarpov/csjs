@@ -30,14 +30,14 @@ describe('Queue: ', () => {
         const [method, value, expected] = t;
 
         if (method === PUSH) {
-            test(`${method}(${value}), peak() returns ${expected}`, () => {
+            test(`${method}(${value}), peek() returns ${expected}`, () => {
                 queue[method](value);
-                expect(queue.peak()).toBe(expected);
+                expect(queue.peek()).toBe(expected);
             });
         } else if (method === POP) {
-            test(`${method}() return ${value}, peak() returns ${expected}`, () => {
+            test(`${method}() return ${value}, peek() returns ${expected}`, () => {
                 expect(queue[method]()).toBe(value);
-                expect(queue.peak()).toBe(expected);
+                expect(queue.peek()).toBe(expected);
             });
         } else {
             assert(false);
