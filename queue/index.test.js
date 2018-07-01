@@ -1,8 +1,8 @@
 const Queue = require('./');
 const assert = require('assert');
 
-const PUSH = 'enqueue';
-const POP = 'dequeue';
+const PUSH = 'push';
+const POP = 'pop';
 
 const tests = [
     /**
@@ -30,14 +30,14 @@ describe('Queue: ', () => {
         const [method, value, expected] = t;
 
         if (method === PUSH) {
-            test(`${method}(${value}), front() returns ${expected}`, () => {
-                queue.enqueue(value);
-                expect(queue.front()).toBe(expected);
+            test(`${method}(${value}), peak() returns ${expected}`, () => {
+                queue[method](value);
+                expect(queue.peak()).toBe(expected);
             });
         } else if (method === POP) {
-            test(`${method}() return ${value}, front() returns ${expected}`, () => {
-                expect(queue.dequeue()).toBe(value);
-                expect(queue.front()).toBe(expected);
+            test(`${method}() return ${value}, peak() returns ${expected}`, () => {
+                expect(queue[method]()).toBe(value);
+                expect(queue.peak()).toBe(expected);
             });
         } else {
             assert(false);
