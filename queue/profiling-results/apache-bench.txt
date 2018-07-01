@@ -16,31 +16,31 @@ Document Path:          /?profile=queue
 Document Length:        2 bytes
 
 Concurrency Level:      20
-Time taken for tests:   197.129 seconds
+Time taken for tests:   2.352 seconds
 Complete requests:      250
 Failed requests:        0
 Keep-Alive requests:    0
 Total transferred:      25750 bytes
 HTML transferred:       500 bytes
-Requests per second:    1.27 [#/sec] (mean)
-Time per request:       15770.337 [ms] (mean)
-Time per request:       788.517 [ms] (mean, across all concurrent requests)
-Transfer rate:          0.13 [Kbytes/sec] received
+Requests per second:    106.29 [#/sec] (mean)
+Time per request:       188.171 [ms] (mean)
+Time per request:       9.409 [ms] (mean, across all concurrent requests)
+Transfer rate:          10.69 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
 Connect:        0    0   0.2      0       1
-Processing:   798 15195 2520.9  15755   17685
-Waiting:      797 15195 2520.9  15755   17685
-Total:        800 15195 2520.7  15755   17685
+Processing:    47  178  27.6    171     248
+Waiting:       44  178  27.7    171     248
+Total:         48  178  27.6    171     248
 
 Percentage of the requests served within a certain time (ms)
-  50%  15755
-  66%  15940
-  75%  16114
-  80%  16246
-  90%  16748
-  95%  16832
-  98%  17377
-  99%  17570
- 100%  17685 (longest request)
+  50%    171
+  66%    174
+  75%    186
+  80%    193
+  90%    221
+  95%    235
+  98%    241
+  99%    246
+ 100%    248 (longest request)
