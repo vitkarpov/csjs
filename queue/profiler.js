@@ -8,6 +8,6 @@
     const Queue = require('./queue');
     const maxHeap = new Queue();
 
-    items.forEach((item) => maxHeap.enqueue());
-    items.forEach((item) => maxHeap.dequeue());
+    items.forEach((item) => maxHeap.push(item));
+    items.forEach(() => maxHeap.pop());
 });
